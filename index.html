@@ -247,7 +247,137 @@
   .timeline-content {
     padding: 15px;
   }
+.publication-intro {
+  color: #64748b;
+  margin-bottom: 25px;
+}
 
+.publication-tabs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.pub-tab {
+  border: none;
+  background: #e8eef6;
+  color: #17365d;
+  padding: 11px 22px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.pub-tab.active {
+  background: #17365d;
+  color: white;
+}
+
+.publication-group {
+  display: none;
+}
+
+.publication-group.active-group {
+  display: block;
+}
+
+.year-heading {
+  font-size: 22px;
+  font-weight: bold;
+  color: #17365d;
+  margin: 30px 0 15px;
+  padding-bottom: 7px;
+  border-bottom: 2px solid #e5e7eb;
+}
+
+.publication-card {
+  padding: 22px;
+  margin-bottom: 16px;
+  background: #f8fafc;
+  border-radius: 10px;
+  border-left: 4px solid #17365d;
+}
+
+.publication-card h3 {
+  color: #172033;
+  font-size: 18px;
+  line-height: 1.5;
+  margin: 9px 0 10px;
+}
+
+.publication-type {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: bold;
+  letter-spacing: 0.6px;
+  color: #1d4ed8;
+  background: #dbeafe;
+  padding: 4px 8px;
+  border-radius: 5px;
+}
+
+.publication-type.book {
+  color: #6b3d10;
+  background: #fef3c7;
+}
+
+.authors {
+  color: #475569;
+  margin-bottom: 5px;
+}
+
+.journal {
+  color: #64748b;
+}
+
+.book-info {
+  color: #64748b;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.publication-links {
+  margin-top: 13px;
+}
+
+.publication-links a {
+  display: inline-block;
+  background: #17365d;
+  color: white;
+  text-decoration: none;
+  padding: 7px 13px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.publication-links a:hover {
+  background: #245486;
+}
+
+.more-publications {
+  text-align: center;
+  color: #94a3b8;
+  padding: 20px;
+  font-style: italic;
+}
+
+.scholar-all {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.scholar-all a {
+  display: inline-block;
+  text-decoration: none;
+  background: #17365d;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+}
     @media (max-width: 800px) {
       .hero-container {
         flex-direction: column;
@@ -488,9 +618,272 @@
         <li>Spor ve Egzersiz Psikolojisi</li>
       </ul>
     </section>
+<section id="yayinlar">
+  <h2>Yayınlar</h2>
 
-    <section id="yayinlar">
-      <h2>Yayınlar</h2>
+  <p class="publication-intro">
+    Bilimsel yayınlarımı aşağıda makaleler ve kitap bölümleri
+    kategorilerinde inceleyebilirsiniz.
+  </p>
+
+  <div class="publication-tabs">
+    <button class="pub-tab active" onclick="showPublications('makaleler', this)">
+      Makaleler
+    </button>
+
+    <button class="pub-tab" onclick="showPublications('kitaplar', this)">
+      Kitap Bölümleri
+    </button>
+  </div>
+
+  <!-- MAKALELER -->
+  <div id="makaleler" class="publication-group active-group">
+
+    <div class="year-heading">2026</div>
+
+    <article class="publication-card">
+      <span class="publication-type">MAKALE</span>
+
+      <h3>
+        Effects of Proprioceptive Neuromuscular Facilitation-Based
+        Reformer Pilates and Hatha Yoga on Functional Fitness,
+        Balance, and Cognitive Performance in Older Women:
+        A 16-Week Randomized Controlled Trial
+      </h3>
+
+      <p class="authors">
+        Arikan, İ.İ., Yarayan, Y.E., <strong>Turhan, M.</strong> et al.
+      </p>
+
+      <p class="journal">
+        <em>Bratislava Medical Journal</em>, 2026.
+      </p>
+
+      <div class="publication-links">
+        <a href="https://doi.org/10.1007/s44411-026-00804-x"
+           target="_blank">DOI</a>
+      </div>
+    </article>
+
+    <article class="publication-card">
+      <span class="publication-type">MAKALE</span>
+
+      <h3>
+        The Role of Ruminative Thinking in Effective Decision-Making
+        Among Orienteering Athletes
+      </h3>
+
+      <p class="authors">
+        <strong>Turhan, M. Ö.</strong>, Kaya, C., & Yasun, E.
+      </p>
+
+      <p class="journal">
+        <em>Burdur Mehmet Akif Ersoy University Journal of Sports Sciences</em>,
+        4(1), 16–28, 2026.
+      </p>
+    </article>
+
+    <article class="publication-card">
+      <span class="publication-type">MAKALE</span>
+
+      <h3>
+        The mediating role of quality of life in the relationship
+        between teachers’ participation in physical activity and
+        empathic and social self-efficacy
+      </h3>
+
+      <p class="authors">
+        <strong>Turhan, M.Ö.</strong>, Arslanboga, R., Eroglu, S.Y.,
+        Koc, M.C., Carneiro, L., Talaghir, L-G., Manolache, G.M.,
+        Iconomescu, T.M., Cristea, F., & Berdila, A.
+      </p>
+
+      <p class="journal">
+        <em>Frontiers in Psychology</em>, 17:1781543, 2026.
+      </p>
+    </article>
+
+    <article class="publication-card">
+      <span class="publication-type">MAKALE</span>
+
+      <h3>
+        Sportif Rekreasyonel Aktiviteye Katılımın Psikolojik Sağlamlık
+        ve Stresle Başa Çıkma Üzerine Etkisi:
+        Bir Yapısal Eşitlik Modeli
+      </h3>
+
+      <p class="authors">
+        <strong>Turhan, M.Ö.</strong>
+      </p>
+
+      <p class="journal">
+        <em>Anadolu Kültürel Araştırmalar Dergisi</em>,
+        10(2), 841–859, 2026.
+      </p>
+    </article>
+
+    <article class="publication-card">
+      <span class="publication-type">MAKALE</span>
+
+      <h3>
+        Beden Eğitimi ve Spor Öğretmenlerinde Özgüven Düzeyinin
+        Örgütsel Muhalefete Etkisinin İncelenmesi
+      </h3>
+
+      <p class="authors">
+        <strong>Turhan, M. Ö.</strong>, Arslanboğa, R.,
+        Kuyulu, İ. & Abat, M.
+      </p>
+
+      <p class="journal">
+        <em>Beden Eğitimi ve Spor Bilimleri Dergisi</em>,
+        20(1), 186–201, 2026.
+      </p>
+    </article>
+
+    <article class="publication-card">
+      <span class="publication-type">MAKALE</span>
+
+      <h3>
+        The mediating role of altruistic leadership perception
+        in the relationship between psychological wellbeing
+        and job performance among coaches
+      </h3>
+
+      <p class="authors">
+        Arslanboga, R., <strong>Turhan, M.O.</strong>, Eroglu, S.Y.,
+        Koc, M.C., Talaghir, L-G., Manolache, G.M.,
+        Iconomescu, T.M. & Cristea, F.
+      </p>
+
+      <p class="journal">
+        <em>Frontiers in Psychology</em>, 17:1781192, 2026.
+      </p>
+    </article>
+
+    <article class="publication-card">
+      <span class="publication-type">MAKALE</span>
+
+      <h3>
+        Muş Alparslan Üniversitesi Akademik ve İdari Personelinin
+        Vücut Kompozisyonu, Kassal Kuvvet ve Fiziksel Aktivite
+        Düzeylerinin İncelenmesi
+      </h3>
+
+      <p class="authors">
+        Sarı, C., Koç, H., <strong>Turhan, M. Ö.</strong>,
+        Han, M., & Karadağ, A.
+      </p>
+
+      <p class="journal">
+        <em>Iğdır Üniversitesi Spor Bilimleri Dergisi</em>,
+        9(1), 10–21, 2026.
+      </p>
+
+      <div class="publication-links">
+        <a href="https://doi.org/10.48133/igdirsbd.1945335"
+           target="_blank">DOI</a>
+      </div>
+    </article>
+
+    <div class="year-heading">2025</div>
+
+    <article class="publication-card">
+      <span class="publication-type">MAKALE</span>
+
+      <h3>
+        Investigation of Nutrition-Exercise Behaviors of Students
+        Studying at the Faculty of Sports Sciences
+      </h3>
+
+      <p class="authors">
+        Arslanboğa, R. & <strong>Turhan, M.Ö.</strong>
+      </p>
+
+      <p class="journal">
+        <em>Journal of Sport for All and Recreation</em>,
+        7(2), 266–272, 2025.
+      </p>
+
+      <div class="publication-links">
+        <a href="https://doi.org/10.56639/jsar.1680453"
+           target="_blank">DOI</a>
+      </div>
+    </article>
+
+    <div class="more-publications">
+      Diğer makaleler aşağıya eklenecektir.
+    </div>
+
+  </div>
+
+
+  <!-- KİTAP BÖLÜMLERİ -->
+  <div id="kitaplar" class="publication-group">
+
+    <div class="year-heading">2025</div>
+
+    <article class="publication-card">
+      <span class="publication-type book">KİTAP BÖLÜMÜ</span>
+
+      <h3>
+        Finansal Fair Play’e Kapsamlı Bir Bakış:
+        Uluslararası Literatür Üzerine Derleme
+      </h3>
+
+      <p class="authors">
+        Arslanboğa, R. & <strong>Turhan, M.Ö.</strong>
+      </p>
+
+      <p class="journal">
+        <em>Spor Bilimleri Araştırmaları-3</em>,
+        Özgür Yayınları, 2025.
+      </p>
+
+      <p class="book-info">
+        ISBN: 978-625-5757-61-6 · ss. 19–30
+      </p>
+    </article>
+
+    <div class="year-heading">2024</div>
+
+    <article class="publication-card">
+      <span class="publication-type book">KİTAP BÖLÜMÜ</span>
+
+      <h3>
+        Spor Psikolojisinin Temelleri:
+        Tanım, Tarihsel Gelişim ve Modern Uygulamalar
+      </h3>
+
+      <p class="authors">
+        Egil, İ., Yaşar, M.E., <strong>Turhan, M.Ö.</strong>
+      </p>
+
+      <p class="journal">
+        <em>Spor Bilimlerinde Aktüel Yaklaşımlar-3</em>,
+        Duvar Yayınevi, 2024.
+      </p>
+
+      <p class="book-info">
+        ISBN: 978-625-5530-20-2 · ss. 144–159
+      </p>
+    </article>
+
+    <div class="more-publications">
+      Diğer kitap bölümleri aşağıya eklenecektir.
+    </div>
+
+  </div>
+
+  <div class="scholar-all">
+    <a href="https://scholar.google.com/citations?user=Tk3Nu-4AAAAJ&hl=tr&oi=ao"
+       target="_blank">
+      Tüm Çalışmaları Google Scholar'da Görüntüle →
+    </a>
+  </div>
+
+</section>
+   
 
       <p>
         Bilimsel makaleler, ulusal ve uluslararası yayınlar,
@@ -533,6 +926,20 @@
   <footer>
     © 2026 Muhammed Özkan Turhan · Tüm hakları saklıdır.
   </footer>
+<script>
+function showPublications(category, button) {
 
+  document.querySelectorAll('.publication-group').forEach(function(group) {
+    group.classList.remove('active-group');
+  });
+
+  document.querySelectorAll('.pub-tab').forEach(function(tab) {
+    tab.classList.remove('active');
+  });
+
+  document.getElementById(category).classList.add('active-group');
+  button.classList.add('active');
+}
+</script>
 </body>
 </html>
