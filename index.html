@@ -4,40 +4,189 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Özkan Turhan | Akademik Web Sitesi</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+      color: #1f2937;
+      background: #f6f8fb;
+    }
+
+    header {
+      background: linear-gradient(135deg, #0f172a, #1e3a5f);
+      color: white;
+      padding: 70px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 48px;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 20px;
+      opacity: 0.9;
+    }
+
+    nav {
+      background: white;
+      padding: 16px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    }
+
+    nav a {
+      color: #1e3a5f;
+      text-decoration: none;
+      margin: 0 14px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #2563eb;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    section {
+      background: white;
+      margin-bottom: 25px;
+      padding: 30px;
+      border-radius: 14px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.06);
+    }
+
+    h2 {
+      color: #1e3a5f;
+      margin-bottom: 15px;
+      font-size: 28px;
+    }
+
+    .hero-buttons {
+      margin-top: 25px;
+    }
+
+    .btn {
+      display: inline-block;
+      text-decoration: none;
+      background: white;
+      color: #1e3a5f;
+      padding: 10px 18px;
+      border-radius: 8px;
+      margin: 5px;
+      font-weight: bold;
+    }
+
+    .btn:hover {
+      background: #e5e7eb;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      color: #64748b;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 34px;
+      }
+
+      nav a {
+        display: inline-block;
+        margin: 6px 8px;
+      }
+    }
+  </style>
 </head>
 
 <body>
 
-  <h1>Özkan Turhan</h1>
+  <header>
+    <h1>Özkan Turhan</h1>
+    <p>Akademik Kişisel Web Sitesi</p>
 
-  <h2>Akademik Kişisel Web Sitesi</h2>
+    <div class="hero-buttons">
+      <a href="#hakkimda" class="btn">Hakkımda</a>
+      <a href="#yayinlar" class="btn">Yayınlar</a>
+      <a href="#iletisim" class="btn">İletişim</a>
+    </div>
+  </header>
 
-  <p>
-    Web siteme hoş geldiniz.
-  </p>
+  <nav>
+    <a href="#hakkimda">Hakkımda</a>
+    <a href="#arastirma">Araştırma Alanları</a>
+    <a href="#yayinlar">Yayınlar</a>
+    <a href="#projeler">Projeler</a>
+    <a href="#iletisim">İletişim</a>
+  </nav>
 
-  <p>
-    Bu web sitesi akademik çalışmalarımı, araştırmalarımı,
-    yayınlarımı ve bilimsel faaliyetlerimi paylaşmak amacıyla
-    hazırlanmıştır.
-  </p>
+  <div class="container">
 
-  <hr>
+    <section id="hakkimda">
+      <h2>Hakkımda</h2>
+      <p>
+        Akademik çalışmalarımı, bilimsel araştırmalarımı ve yayınlarımı
+        paylaşmak amacıyla hazırlanan kişisel web siteme hoş geldiniz.
+      </p>
+    </section>
 
-  <h2>Hakkımda</h2>
-  <p>
-    Akademik özgeçmiş ve araştırma alanları yakında eklenecektir.
-  </p>
+    <section id="arastirma">
+      <h2>Araştırma Alanları</h2>
+      <ul>
+        <li>Spor Bilimleri</li>
+        <li>Egzersiz ve Performans</li>
+        <li>Psikolojik Performans</li>
+        <li>İstatistiksel Analiz ve Araştırma Yöntemleri</li>
+      </ul>
+    </section>
 
-  <h2>Yayınlar</h2>
-  <p>
-    Bilimsel yayınlar yakında eklenecektir.
-  </p>
+    <section id="yayinlar">
+      <h2>Yayınlar</h2>
+      <p>
+        Bilimsel makaleler, bildiriler ve diğer akademik yayınlar
+        bu bölümde yer alacaktır.
+      </p>
+    </section>
 
-  <h2>İletişim</h2>
-  <p>
-    İletişim bilgileri yakında eklenecektir.
-  </p>
+    <section id="projeler">
+      <h2>Projeler</h2>
+      <p>
+        Devam eden ve tamamlanan akademik projeler bu bölümde paylaşılacaktır.
+      </p>
+    </section>
+
+    <section id="iletisim">
+      <h2>İletişim</h2>
+      <p>
+        Akademik iletişim bilgileri ve sosyal akademik profil bağlantıları
+        bu bölümde yer alacaktır.
+      </p>
+    </section>
+
+  </div>
+
+  <footer>
+    © 2026 Özkan Turhan
+  </footer>
 
 </body>
 </html>
