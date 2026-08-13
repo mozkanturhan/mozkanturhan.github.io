@@ -183,6 +183,70 @@
       padding: 20px 20px 40px;
       font-size: 14px;
     }
+    .timeline {
+  position: relative;
+  margin-top: 10px;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 91px;
+  top: 8px;
+  bottom: 8px;
+  width: 3px;
+  background: #dbe4ef;
+}
+
+.timeline-item {
+  position: relative;
+  display: grid;
+  grid-template-columns: 75px 1fr;
+  gap: 35px;
+  margin-bottom: 30px;
+}
+
+.timeline-year {
+  background: #17365d;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  padding: 8px 6px;
+  border-radius: 8px;
+  height: fit-content;
+  z-index: 2;
+}
+
+.timeline-content {
+  background: #f8fafc;
+  border-radius: 10px;
+  padding: 18px 20px;
+  border-left: 4px solid #17365d;
+}
+
+.timeline-content h3 {
+  color: #17365d;
+  margin-bottom: 6px;
+  font-size: 18px;
+}
+
+.timeline-content p {
+  color: #4b5563;
+}
+
+@media (max-width: 600px) {
+  .timeline::before {
+    left: 37px;
+  }
+
+  .timeline-item {
+    grid-template-columns: 75px 1fr;
+    gap: 15px;
+  }
+
+  .timeline-content {
+    padding: 15px;
+  }
 
     @media (max-width: 800px) {
       .hero-container {
@@ -313,21 +377,106 @@
 
   <main>
 
-    <section id="hakkimda">
-      <h2>Hakkımda</h2>
+  <section id="hakkimda">
+  <h2>Hakkımda</h2>
 
-      <p>
-        Muş Alparslan Üniversitesi Spor Bilimleri Fakültesi,
-        Beden Eğitimi ve Spor Bölümü'nde Dr. Öğr. Üyesi olarak
-        akademik çalışmalarımı sürdürmekteyim.
-      </p>
+  <p>
+    1997 yılında Siirt'te doğdu. Lisans eğitimini 2019 yılında
+    Siirt Üniversitesi Beden Eğitimi ve Spor Yüksekokulu
+    Spor Yöneticiliği Bölümünde tamamladı. Ardından Muş Alparslan
+    Üniversitesi Sosyal Bilimler Enstitüsü Beden Eğitimi ve Spor
+    Anabilim Dalında başladığı yüksek lisans eğitimini 2021 yılında tamamladı.
+  </p>
 
-      <p style="margin-top:12px;">
-        Bu web sitesi; akademik çalışmalarımı, bilimsel yayınlarımı,
-        araştırma alanlarımı ve projelerimi paylaşmak amacıyla
-        hazırlanmıştır.
-      </p>
-    </section>
+  <p style="margin-top:14px;">
+    2021 yılında Muş Alparslan Üniversitesi Spor Bilimleri Fakültesi
+    Beden Eğitimi ve Spor Bölümünde Araştırma Görevlisi olarak akademik
+    kariyerine başladı. Aynı yıl başladığı doktora eğitimini
+    2025 yılında Muş Alparslan Üniversitesi Sosyal Bilimler Enstitüsü
+    Beden Eğitimi ve Spor Anabilim Dalında tamamladı.
+  </p>
+
+  <p style="margin-top:14px;">
+    2021–2026 yılları arasında Muş Alparslan Üniversitesi Spor Bilimleri
+    Fakültesinde Araştırma Görevlisi olarak görev yapan Turhan,
+    2026 yılından itibaren aynı fakültenin Beden Eğitimi ve Spor Bölümünde
+    Dr. Öğr. Üyesi olarak akademik çalışmalarını sürdürmektedir.
+  </p>
+
+  <p style="margin-top:14px;">
+    Ulusal ve uluslararası bilimsel kongrelerde sunulan bildirileri,
+    bilimsel makaleleri ve kitap bölümleri bulunan Turhan,
+    spor bilimleri alanındaki araştırma, yayın ve akademik faaliyetlerine
+    devam etmektedir.
+  </p>
+</section>
+
+<section id="akademik-yolculuk">
+  <h2>Akademik Yolculuk</h2>
+
+  <div class="timeline">
+
+    <div class="timeline-item">
+      <div class="timeline-year">2019</div>
+      <div class="timeline-content">
+        <h3>Lisans</h3>
+        <p>
+          Siirt Üniversitesi<br>
+          Beden Eğitimi ve Spor Yüksekokulu<br>
+          Spor Yöneticiliği
+        </p>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-year">2021</div>
+      <div class="timeline-content">
+        <h3>Yüksek Lisans</h3>
+        <p>
+          Muş Alparslan Üniversitesi<br>
+          Sosyal Bilimler Enstitüsü<br>
+          Beden Eğitimi ve Spor Anabilim Dalı
+        </p>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-year">2021</div>
+      <div class="timeline-content">
+        <h3>Araştırma Görevlisi</h3>
+        <p>
+          Muş Alparslan Üniversitesi<br>
+          Spor Bilimleri Fakültesi
+        </p>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-year">2025</div>
+      <div class="timeline-content">
+        <h3>Doktora</h3>
+        <p>
+          Muş Alparslan Üniversitesi<br>
+          Sosyal Bilimler Enstitüsü<br>
+          Beden Eğitimi ve Spor Anabilim Dalı
+        </p>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-year">2026</div>
+      <div class="timeline-content">
+        <h3>Dr. Öğr. Üyesi</h3>
+        <p>
+          Muş Alparslan Üniversitesi<br>
+          Spor Bilimleri Fakültesi<br>
+          Beden Eğitimi ve Spor Bölümü
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
 
     <section id="arastirma">
       <h2>Araştırma Alanları</h2>
